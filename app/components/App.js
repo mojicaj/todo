@@ -9,7 +9,7 @@ var Task = require('./Task');
 class App extends React.Component {
   render() {
     return (
-      <div>
+      <div className='container'>
         <GetDate />
         <Task />
       </div>
