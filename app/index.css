@@ -45,8 +45,8 @@ li {
 
 .button {
   color: #e6e6e6;
-  background: #0a0a0a;
-  border: none;
+  background: #07409e;
+  border: 1px solid black;
   font-size: 16px;
   border-radius: 3px;
   width: 100px;
@@ -57,9 +57,10 @@ li {
 }
 
 .button:hover:enabled {
-	background: linear-gradient(#1a1a1a,#0a0a0a);
+	background: #5281ce;
 	color: #fff;
 	text-decoration: none;
+	cursor: pointer;
 }
 
 .button:active {
@@ -76,4 +77,10 @@ li {
 	background: white;
 	margin: 5px 0;
 	text-align: center;
+	cursor: pointer;
+}
+
+.count {
+	text-align: center;
+	color: white;
 }

@@ -31,9 +31,8 @@ class NewTask extends React.Component {
   }
 
   render() {
-    //var last = this.props.list;
-    var valueTxt;
     
+    var valueTxt;
 
     if (this.state.newtask === undefined || this.props.last === this.state.newtask) {
       valueTxt = '';
@@ -49,7 +48,7 @@ class NewTask extends React.Component {
           onChange={this.handleChange} />
 
         <button className='button' type='submit'
-          disabled={!this.state.newtask}>Add Task</button>
+          disabled={valueTxt === ''}>Add Task</button>
 
       </form>
     )

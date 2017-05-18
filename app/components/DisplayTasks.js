@@ -2,8 +2,8 @@ var React = require('react');
 
 class DisplayTasks extends React.Component {
   
-  handleClick(task) {
-    console.log(task.target);
+  handleClick(k) {
+    this.props.onClick(k);
   }
 
   render() {
@@ -12,7 +12,7 @@ class DisplayTasks extends React.Component {
         <ul className='tasks-list'>
           {this.props.tasks.map(function (task) {
             return (
-              <li key={task} onClick={this.handleClick}>{task}</li>
+              <li key={task} onClick={this.handleClick.bind(this, task)}>{task}</li>
             )
           }, this)}
         </ul>
